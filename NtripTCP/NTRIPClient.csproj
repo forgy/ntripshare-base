@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0FA39F8B-CDB8-421C-A75F-C669462992C0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>NtripClient.Program</StartupObject>
+    <RootNamespace>NTRIPClient</RootNamespace>
+    <AssemblyName>NtripShare Base 2020</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>aN.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\forgy\Desktop\工具\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ProductName>Ntrip SHARE</ProductName>
+    <PublisherName>FORGY</PublisherName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>NTRIPClient.xml</DocumentationFile>
+    <NOWARN>1591,660,661</NOWARN>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>NTRIPClient.xml</DocumentationFile>
+    <NOWARN>1591,660,661</NOWARN>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>FD7EAA5E9219C55AAC10F8BEA882B91D3EC595FC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>NTRIPClient_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="commons-net-2.2">
+      <HintPath>..\goGPS_Java.git\trunk\target\commons-net-2.2.dll</HintPath>
+    </Reference>
+    <Reference Include="core-0.30">
+      <HintPath>..\goGPS_Java.git\trunk\target\core-0.30.dll</HintPath>
+    </Reference>
+    <Reference Include="dense64-0.30">
+      <HintPath>..\goGPS_Java.git\trunk\target\dense64-0.30.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.34, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="GeoAPI, Version=1.6.4448.22541, Culture=neutral, PublicKeyToken=a1a0da7def465678, processorArchitecture=MSIL">
+      <HintPath>..\packages\GeoAPI.1.6.0\lib\net35\GeoAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core, Version=1.7.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GMap.NET.Core\bin\Debug\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="HTTPClient-0.3-3">
+      <HintPath>..\goGPS_Java.git\trunk\target\HTTPClient-0.3-3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NtripShare\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RXTXcomm">
+      <HintPath>..\goGPS_Java.git\trunk\target\RXTXcomm.dll</HintPath>
+    </Reference>
+    <Reference Include="simple-0.30">
+      <HintPath>..\goGPS_Java.git\trunk\target\simple-0.30.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.84.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\MapDownloader\References\Windows\System.Data.SQLite.DLL</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GMap.NET.WindowsForms\GMap.NET.WindowsForms.csproj">
+      <Project>{E06DEF77-F933-42FB-AFD7-DB2D0D8D6A98}</Project>
+      <Name>GMap.NET.WindowsForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GMapChinaRegion\GMapChinaRegion.csproj">
+      <Project>{01b49280-d6f4-467c-8337-cea9824f36ce}</Project>
+      <Name>GMapChinaRegion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GMapCommonType\GMapCommonType.csproj">
+      <Project>{b004e87d-fe07-433c-812c-341d16164a40}</Project>
+      <Name>GMapCommonType</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GMapPolygonLib\GMapPolygonLib.csproj">
+      <Project>{22e05880-ed51-420f-a61f-a5b7cdb32fbc}</Project>
+      <Name>GMapPolygonLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GMapPositionFix\GMapPositionFix.csproj">
+      <Project>{3aa453ec-6552-431c-9190-68ae85a6b5c3}</Project>
+      <Name>GMapPositionFix</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GMapProvidersExt\GMapProvidersExt.csproj">
+      <Project>{e873e646-be34-4060-a997-5087e9b7021c}</Project>
+      <Name>GMapProvidersExt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GMapUtil\GMapUtil.csproj">
+      <Project>{db4076e6-ab5b-48e1-b674-391ccfad9b4f}</Project>
+      <Name>GMapUtil</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetUtil\NetUtil.csproj">
+      <Project>{0b25de8c-3747-4fd5-90a6-789fe09b1816}</Project>
+      <Name>NetUtil</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharpGps\SharpGps.csproj">
+      <Project>{b5930c8e-c0c7-44b1-a98b-aa19170c3ba7}</Project>
+      <Name>SharpGps</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.cs" />
+    <Compile Include="CasterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CasterForm.Designer.cs">
+      <DependentUpon>CasterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FrmCoord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FrmCoord.Designer.cs">
+      <DependentUpon>FrmCoord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NtripForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NtripForm.Designer.cs">
+      <DependentUpon>NtripForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ntrip\NTRIP.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="TCPServer.cs" />
+    <Compile Include="CloseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloseDialog.Designer.cs">
+      <DependentUpon>CloseDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDialog.Designer.cs">
+      <DependentUpon>UserDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TCPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCPForm.Designer.cs">
+      <DependentUpon>TCPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsDialog.Designer.cs">
+      <DependentUpon>OptionsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Application.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NTRIPDialog.Designer.cs">
+      <DependentUpon>NTRIPDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NTRIPDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SerialDialog.Designer.cs">
+      <DependentUpon>SerialDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SerialDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Util\LogUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CasterForm.resx">
+      <DependentUpon>CasterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloseDialog.resx">
+      <DependentUpon>CloseDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FrmCoord.resx">
+      <DependentUpon>FrmCoord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NtripForm.resx">
+      <DependentUpon>NtripForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDialog.resx">
+      <DependentUpon>UserDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TCPForm.resx">
+      <DependentUpon>TCPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsDialog.resx">
+      <DependentUpon>OptionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NTRIPDialog.resx">
+      <DependentUpon>NTRIPDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SerialDialog.resx">
+      <DependentUpon>SerialDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="aN.ico" />
+    <Content Include="log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Project="$(MSBuildBinPath)/Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if /I "$(ConfigurationName)" == "Release" Eazfuscator.NET.exe "$(TargetPath)" --msbuild-project-path "$(ProjectPath)" --msbuild-project-configuration "$(ConfigurationName)" --msbuild-project-platform "$(PlatformName)" --msbuild-solution-path "$(SolutionPath)" -n --newline-flush -v 2018.1</PostBuildEvent>
+  </PropertyGroup>
+</Project>
