@@ -13,4 +13,6 @@ NtripShare开源版本，支持差分数据转发、用户管理等常用CORS基
 作者：Mr.Peng 
 2021年1月7日
 
-
+VX:ntripshare
+QQ:273066127  
+email:giserpeng@163.com
